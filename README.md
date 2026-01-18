@@ -1,1 +1,1 @@
-this is the repository for learning the data manipulation using python
+This is the repository for learning the data manipulation using python
