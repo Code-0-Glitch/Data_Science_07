@@ -1,16 +1,17 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import os as os
 
 x = np.array([1, 2, 3, 4, 5, 6]);
 y = np.array([12, 23, 34, 45, 56 ,90])
 
 
-datafile = pd.DataFrame({'Column_1': x,
+newdata = pd.DataFrame({'Column_1': x,
                           'Column_2': y});
-
-print(datafile)
-
+file_path = r'<file_location/Random_File>'
+print(newdata)
+data_1 = pd.read_cv(file_path, index_col=0)
 
 
 
