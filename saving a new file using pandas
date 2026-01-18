@@ -1,0 +1,20 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import os as os
+
+
+urea = np.random.uniform(100, 200, 50)
+couns = np.random.uniform(1, 20, 50)
+age = np.random.uniform(4, 80, 50)
+datafile = pd.DataFrame({'age': np.around(age, 2), 
+                         'count': np.around(couns, 2),
+                          'ureaLVL': np.around(urea, 2) })
+
+
+file_path = r'C:/Users/india/OneDrive/Desktop/c and c++/Python/DataSciecne/Randome_File';
+datafile.to_csv(file_path, index=True )
+
+# print(datafile);
+data_1 = pd.read_csv(file_path, index_col=0)
+print(data_1)
